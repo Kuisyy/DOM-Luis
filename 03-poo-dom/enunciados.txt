@@ -1,0 +1,11 @@
+/Implementar una funcion constructura que modelee un producto, del producto quero el nombre,precio,stock,img/url , los metodos que quiero son obtener info del producto y actualizar stock(pasandole como parametro una cantidad validando si es positiva).
+//Genera un array de productos renderizalos(pintalos) en el DOM añade un boton a cada producto que permita actualizar el stock.
+//Aplicar dos de las tres formas vistas de POO
+
+
+
+//Sistema Bancario. 
+//Objetivo: Implementar una clase privada llamada CuentaBancaria que tenga una propiedad privada llamada saldo y que me permita depositar una cantidad o retirar una cantidad (valida que se puedo que sea positivo .... )
+//Genera en el DOM dos contenedores, uno para ingresar/retirar y otro para mostrar info, el ingresar/ retirrar se hara con radioButton
+//Hazlo con un desplegable lo de mostrar numeros de cuenta
+//Un numero de cuenta tiene 16 numeros y sin texto.
