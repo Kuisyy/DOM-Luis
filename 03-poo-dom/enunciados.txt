@@ -9,3 +9,12 @@
 //Genera en el DOM dos contenedores, uno para ingresar/retirar y otro para mostrar info, el ingresar/ retirrar se hara con radioButton
 //Hazlo con un desplegable lo de mostrar numeros de cuenta
 //Un numero de cuenta tiene 16 numeros y sin texto.
+
+
+ const botonesBorrar = document.querySelectorAll(".btn-borrar");
+    botonesBorrar.forEach((boton) => {
+        boton.addEventListener("click", (event) => {
+            const index = event.target.dataset.id; // Obtener el índice del producto
+            carrito.deleteProduct(index); // Eliminar producto del carrito
+            renderProducts(); // Volver a renderizar la lista
+        });
