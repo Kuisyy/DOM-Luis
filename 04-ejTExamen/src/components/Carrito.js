@@ -13,7 +13,7 @@ export default class Carrito {
         //guardar en el localStorage
     }
     editProduct(index,newCantidad){
-        if(newCantidad>0){
+        if(newCantidad>=0){
             this.productos[index].cantidad= newCantidad;
             //guardar en el localStorage
         }
@@ -31,7 +31,7 @@ export default class Carrito {
            const data =JSON.parse(localStorage.getItem("carrito")).map((producto)=>{
                 new Producto(producto.nombre,producto.cantidad,producto.precio);
            })   
-           this.productos= data;
+           return this.productos= data;
         }
 
     }

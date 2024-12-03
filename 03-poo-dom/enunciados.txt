@@ -18,3 +18,8 @@
             carrito.deleteProduct(index); // Eliminar producto del carrito
             renderProducts(); // Volver a renderizar la lista
         });
+        
+        
+OBS 720 sin audio ni camara estudio 
+
+screenity addon de google

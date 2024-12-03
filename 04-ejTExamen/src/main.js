@@ -3,7 +3,8 @@ import Carrito from "./components/Carrito";
 
 //crear instancias carrito / cargar carrito localStorage
 const carrito = new Carrito();
-
+carrito.loadLocalStorage();
+console.log(carrito.productos);
 const agregarProdcutoHandler = (event) =>{
     event.preventDefault();
     const nombre = document.getElementById("nombre").value.trim();
@@ -54,6 +55,8 @@ function renderCarrito(){
         const form = document.getElementById("form");
         form.addEventListener("submit",agregarProdcutoHandler);
 
+        document.getElementById("lista-productos").addEventListener("click",manejarAccionesHandler);
+
 }
 
 const renderProducts = ()=>{
@@ -70,14 +73,24 @@ const renderProducts = ()=>{
     .join("");
     totalCarrito.textContent= carrito.calculateTotal();
 
-    const botonesBorrar = document.querySelectorAll(".btn-borrar");
-    botonesBorrar.forEach((boton) => {
-        boton.addEventListener("click", (event) => {
-            const index = event.target.dataset.id; // Obtener el índice del producto
-            carrito.deleteProduct(index); // Eliminar producto del carrito
-            renderProducts(); // Volver a renderizar la lista
-        });
-});
+    carrito.saveLocalStorage();
+  
+};
+
+const manejarAccionesHandler = (event)=>{
+    const index = Number(event.target.dataset.id);
+    if(event.target.classList.contains("btn-borrar")){
+        carrito.deleteProduct(index);
+        renderProducts();
+    }
+    if(event.target.classList.contains("btn-editar")){
+        const newCantidad= prompt("Introduce la nueva cantidad ",carrito.productos[index].cantidad);
+        if(newCantidad){
+            carrito.editProduct(index,Number(newCantidad));
+            renderProducts();
+        }
+        
+    }
 }
 
 

@@ -36,7 +36,7 @@ import { UsuarioFabrica } from "./components/UsuariosFabrica.js";
 
 //     document.querySelector("#btn-enviar-login").addEventListener("click",()=>{
 //         const email = document.getElementById("email-login").value.trim();
-//         const password = document.getElementById("password-login").value.trim();
+//         const password = document.gef3etElementById("password-login").value.trim();
     
 //         alert(usuario.login(email,password));
 //     });
