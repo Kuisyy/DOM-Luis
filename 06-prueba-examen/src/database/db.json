@@ -1,0 +1,25 @@
+{
+    "products":[
+        {
+            "id":1,
+            "name":"Camisa basica blanca",
+            "price":"9,99",
+            "description":"Camisa basica simple de algodon",
+            "category":"Ropa"
+        },
+        {
+            "id":2,
+            "name":"Camisa basica negra",
+            "price":"9,99",
+            "description":"Camisa basica simple de algodon",
+            "category":"Ropa"
+        },
+        {
+            "id":3,
+            "name":"Camisa basica azul",
+            "price":"9,99",
+            "description":"Camisa basica simple de algodon",
+            "category":"Ropa"
+        }
+    ]
+}
