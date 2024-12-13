@@ -1,0 +1,64 @@
+{
+  "events": [
+    {
+      "id": "2",
+      "title": "Charla sobre React Hooks",
+      "date": "2024-12-15",
+      "organizer": "Luis Martínez"
+    },
+    {
+      "id": "3",
+      "title": "Taller de TypeScript",
+      "date": "2024-12-18",
+      "organizer": "Sofía Rodríguez"
+    },
+    {
+      "id": "4",
+      "title": "WebSockets con Node.js",
+      "date": "2024-12-20",
+      "organizer": "María Fernández"
+    },
+    {
+      "id": "5",
+      "title": "Next.js: Server Side Rendering",
+      "date": "2025-01-05",
+      "organizer": "Pedro López"
+    },
+    {
+      "id": "6",
+      "title": "Programación Funcional con JavaScript",
+      "date": "2025-01-10",
+      "organizer": "Laura González"
+    },
+    {
+      "id": "7",
+      "title": "Optimización de React Performance",
+      "date": "2025-01-12",
+      "organizer": "Fernando Ramírez"
+    },
+    {
+      "id": "8",
+      "title": "Deploy de aplicaciones Next.js",
+      "date": "2025-01-15",
+      "organizer": "Claudia Núñez"
+    },
+    {
+      "id": "9",
+      "title": "Integración de APIs RESTful con Node.js",
+      "date": "2025-01-20",
+      "organizer": "Jorge Castillo"
+    },
+    {
+      "id": "10",
+      "title": "React",
+      "date": "2023-12-12",
+      "organizer": "Isaías FL"
+    },
+    {
+      "id": "11",
+      "title": "Dormision2",
+      "date": "luis@gmail.com",
+      "organizer": "Luis"
+    }
+  ]
+}
