@@ -27,3 +27,11 @@ screenity addon de google
 
 
 
+  <h1>Buscar Práctica</h1>
+    <form action="buscar.php" method="GET">
+        <label for="search">Buscar por ID de práctica o nombre de empresa:</label>
+        <input type="text" id="search" name="search" placeholder="Introduce el nombre o ID" required>
+        
+        <button type="submit">Buscar</button>
+    </form>
+
